@@ -1,12 +1,10 @@
 def calcular_imc(peso, altura):
-    """Calcula o IMC a partir do peso (kg) e altura (m)."""
     if altura <= 0:
         raise ValueError("Altura deve ser maior que zero.")
     return round(peso / (altura ** 2), 2)
 
 
 def classificar_imc(imc):
-    """Classifica o IMC conforme tabela da OMS."""
     if imc < 18.5:
         return "Abaixo do peso"
     elif 18.5 <= imc < 25:
